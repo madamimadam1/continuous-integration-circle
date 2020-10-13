@@ -40,7 +40,7 @@ jobs:
 
       - run:
           name: run html proofer
-          command: REPLACE-ME-WITH-SCRIPT
+          command: bundle exec htmlproofer --check_html --allow_hash_href ./_site 
 
       - run:
           name: notify test is finished
